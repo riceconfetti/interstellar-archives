@@ -1,10 +1,14 @@
+<script>
+   import Button from "../lib/Button.svelte";
+</script>
+
 <div class="hero">
    <h2>Welcome to the</h2>
    <h1>Interstellar <br> Archives</h1>
    
    <div>
-      <a class="btn light" href="/directory">Directory</a>
-      <a class="btn dark" href="/card-builder">Card Builder</a>
+      <Button href='/directory'>Directory</Button>
+      <Button href='/card-builder'>Card Builder</Button>
    </div>
 </div>
 
@@ -14,7 +18,7 @@
       height: 100vh;
       text-transform: uppercase;
       color: #fff;
-      gap: 2em;
+      gap: 3em;
       flex-direction:column;
       align-items: center;
       justify-content: center;
@@ -33,33 +37,6 @@
       div {
          display: flex;
          gap: 3em;
-         
-         .btn {
-            display: flex;
-            font-family: "Exo 2";
-            font-weight: 600;
-            letter-spacing: .1em;
-            font-size: 1.2em;
-            align-items: center;
-            justify-content: center;
-            border-radius:5em;
-            padding: 1em 2em;
-            text-decoration: none;
-         }
-
-         .light {
-               background-color: #fff;
-               color: #000;   
-               transition: ease-in-out .5s;
-               &:hover {
-                  opacity: 50%;
-               }
-         }
-
-         .dark {
-               background-color: #000;
-               color: #fff;   
-         }
       }
       
    }

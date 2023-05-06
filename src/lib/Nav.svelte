@@ -1,17 +1,24 @@
+<script>
+   import {page} from '$app/stores';
+</script>
+
 <nav>
    <a href="/">
       <img alt="IA" src="/favicon.png"/>
       Interstellar Archives
    </a>
    <div class="links">
-      <a href="/directory">Directory</a>
-      <a href="/card-builder">Card Builder</a>
+      <a class:active={$page.url.pathname === "/directory"}  href="/directory">Directory</a>
+      <a class:active={$page.url.pathname === "/card-builder"} href="/card-builder">Card Builder</a>
    </div> 
 </nav>
 
 <style lang="scss">
    nav {
+      position:fixed;
       display: flex;
+      width: 100%;
+      box-sizing: border-box;
       padding: 35px 50px;
       justify-content: space-between;
       align-items: center;
@@ -25,16 +32,30 @@
          text-decoration: none;
          display: flex;
          gap: 20px;
-         align-items: center;
+         align-items: center;   
+         transition-duration: .4s;
          img {
          background: none;
          width: 4em;
+         }
+
+         
+
+         &:hover {
+            color:#FFD070;
+            transition: ease .4s;
+            transform:scale(1.1);
+            text-shadow: #fff 1px 0 10px;
          }
       }
       div.links {
          background: none;
          display: flex;
          gap: 60px;
+      }
+
+      .active {
+         color:#FFD070;
       }
    }
 </style>
