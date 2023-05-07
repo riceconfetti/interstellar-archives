@@ -19,7 +19,7 @@
       display: flex;
       width: 100%;
       box-sizing: border-box;
-      padding: 35px 50px;
+      padding: 2rem 4rem;
       justify-content: space-between;
       align-items: center;
       a {
@@ -51,7 +51,7 @@
       div.links {
          background: none;
          display: flex;
-         gap: 60px;
+         gap: 2em;
       }
 
       .active {

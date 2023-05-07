@@ -5,17 +5,30 @@
 <Nav />
 <div id="blue-overlay"></div>
 <div id="overlay"></div>
+<div id="stars"></div>
 <main>
 	<slot />
 </main>
 
 
 <style lang="scss">
+	:global(*) {
+		margin:0;
+	}
 	:global(body) {
 		font-family: Audiowide, Open Sans, Sans Serif;
-		background: url('/stars.jpg');
 	}
-
+	:global(#stars) {
+		background:url('/stars.jpg');
+		position: fixed; /* Sit on top of the page content */
+		width: 100%; /* Full width (cover the whole page) */
+		height: 100%; /* Full height (cover the whole page) */
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index:-99;
+	}
 	:global(#overlay) {
 		position: fixed; /* Sit on top of the page content */
 		width: 100%; /* Full width (cover the whole page) */
@@ -25,7 +38,7 @@
 		right: 0;
 		bottom: 0;
 		background-color: rgba(0, 0, 0, 0.1);
-		z-index: -99; /* Specify a stack order in case you're using a different order for other elements */
+		z-index: -9; /* Specify a stack order in case you're using a different order for other elements */
 	}
 
 	:global(#blue-overlay) {
