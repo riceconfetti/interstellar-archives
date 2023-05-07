@@ -1,25 +1,32 @@
 <script>
 	import Nav from '../lib/Nav.svelte';
+	import { fade } from 'svelte/transition';
+
+	export let data;
+
+	$: ({ pathname } = data);
 </script>
 
 <Nav />
-<div id="blue-overlay"></div>
-<div id="overlay"></div>
-<div id="stars"></div>
-<main>
-	<slot />
-</main>
+<div id="blue-overlay" />
+<div id="overlay" />
+<div id="stars" />
 
+{#key pathname}
+	<main in:fade={{ duration: 300, delay: 400 }} out:fade={{ duration: 300 }}>
+		<slot />
+	</main>
+{/key}
 
 <style lang="scss">
 	:global(*) {
-		margin:0;
+		margin: 0;
 	}
 	:global(body) {
 		font-family: Audiowide, Open Sans, Sans Serif;
 	}
 	:global(#stars) {
-		background:url('/stars.jpg');
+		background: url('/stars.jpg');
 		position: fixed; /* Sit on top of the page content */
 		width: 100%; /* Full width (cover the whole page) */
 		height: 100%; /* Full height (cover the whole page) */
@@ -27,7 +34,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		z-index:-99;
+		z-index: -99;
 	}
 	:global(#overlay) {
 		position: fixed; /* Sit on top of the page content */
