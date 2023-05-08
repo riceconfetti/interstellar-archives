@@ -1,6 +1,7 @@
 <script>
 	import IndexCard from '../../lib/IndexCard.svelte';
 	import SpaceHeading from '../../lib/SpaceHeading.svelte';
+
 	const Bronya = {
 		name: 'Bronya',
 		image: '/hsr_data/headshots/Bronya.png',

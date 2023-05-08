@@ -5,18 +5,19 @@
 	let currentCharacter = {
 		name: 'Bronya',
 		element: 'wind',
-		path: 'Harmony',
+		path: 'harmony',
 		image: '/hsr_data/headshots/Bronya.png',
 		rarity: 5,
 		lvl: 60,
 		max_lvl: 60,
+      eidolons: 2,
 		stats: [
 			{ type: 'hp', value: 2009 },
 			{ type: 'atk', value: 1312 },
 			{ type: 'def', value: 744 },
 			{ type: 'spd', value: 104 },
-			{ type: 'critrate', value: 14.3 },
-			{ type: 'critdmg', value: 116.5 }
+			{ type: 'crit rate', value: 14.3 },
+			{ type: 'crit dmg', value: 116.5 }
 		]
 	};
 
@@ -48,5 +49,10 @@
 		margin-top: 6em;
 		padding: 4em;
 		width: 100%;
+      .builder {
+         display: flex;
+         flex-direction: column;
+         gap: 2rem;
+      }
 	}
 </style>

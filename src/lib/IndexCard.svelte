@@ -38,6 +38,15 @@
 		width: 200px;
 		height: 345px;
 		position: relative;
+		border: .2rem solid #ffffff00;
+		transition-duration: .5s;
+
+		&:hover {
+			background:rgba(255, 255, 255, 0.37);
+			transform: scale(1.01);
+			transition:ease .5s;
+			border: .2rem solid #fff;
+		}
 	}
 	.background {
 		width: 200px;
