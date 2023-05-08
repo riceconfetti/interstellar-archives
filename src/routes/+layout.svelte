@@ -1,6 +1,9 @@
 <script>
 	import Nav from '../lib/Nav.svelte';
 	import { fade } from 'svelte/transition';
+	import  "@fontsource/audiowide";
+	import  "@fontsource/exo-2";
+	import  "@fontsource/chakra-petch";
 
 	export let data;
 

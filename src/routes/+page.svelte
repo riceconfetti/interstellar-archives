@@ -23,7 +23,7 @@
       align-items: center;
       justify-content: center;
       h2 {
-         font-family: Bai Jamjuree;
+         font-family: "Exo 2";
          font-weight: lighter;
          font-size: 1.5rem;
          letter-spacing: .4em;

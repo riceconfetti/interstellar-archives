@@ -27,5 +27,11 @@
 		"vite": "^4.3.0",
 		"vitest": "^0.25.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@fontsource/audiowide": "^4.5.9",
+		"@fontsource/chakra-petch": "^4.5.9",
+		"@fontsource/exo-2": "^4.5.11",
+		"@fontsource/roboto": "^4.5.8"
+	}
 }
