@@ -1,6 +1,6 @@
 <script>
 	import SpaceHeading from '../../lib/SpaceHeading.svelte';
-	import CharacterCard from '../../lib/CharacterCard.svelte';
+	import CharacterCardBuilder from '../../lib/CharacterCardBuilder.svelte';
 
 	let currentCharacter = {
 		name: 'Bronya',
@@ -29,14 +29,14 @@
 		hp: 550,
 		atk: 244,
 		def: 229,
-		img: ''
+		img: './hsr_data/lightcones/pastandfuture.png'
 	};
 </script>
 
 <div id="container">
 	<div class="builder">
 		<SpaceHeading title="Card Builder" subtitle="Showcase your character stats" />
-		<CharacterCard {currentCharacter} {currentLightcone}/>
+		<CharacterCardBuilder {currentCharacter} {currentLightcone}/>
 	</div>
 </div>
 
