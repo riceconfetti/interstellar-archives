@@ -7,8 +7,9 @@
    <h1>Interstellar <br> Archives</h1>
    
    <div>
-      <Button href='/directory'>Directory</Button>
+      <!--<Button href='/directory'>Directory</Button>-->
       <Button href='/card-builder'>Card Builder</Button>
+      <Button href='/temp-export'>Temp Export</Button>
    </div>
 </div>
 

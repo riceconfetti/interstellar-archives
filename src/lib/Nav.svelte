@@ -8,7 +8,7 @@
       Interstellar Archives
    </a>
    <div class="links">
-      <a class:active={$page.url.pathname === "/directory"}  href="/directory">Directory</a>
+      <!--<a class:active={$page.url.pathname === "/directory"}  href="/directory">Directory</a>-->
       <a class:active={$page.url.pathname === "/card-builder"} href="/card-builder">Card Builder</a>
    </div> 
 </nav>
