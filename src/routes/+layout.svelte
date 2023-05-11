@@ -4,7 +4,7 @@
 	import  "@fontsource/audiowide";
 	import  "@fontsource/exo-2";
 	import  "@fontsource/chakra-petch";
-	//import  "@fontsource/castoro";
+	import  "@fontsource/castoro";
 
 	export let data;
 

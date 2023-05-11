@@ -1,4 +1,9 @@
 <script>
+	import * as Romanice from 'romanice';
+
+	const { romanice } = Romanice;
+	const standardConverter = romanice();
+
 	export let currentCharacter = {
 		name: 'Unknown',
 		element: '',
@@ -98,7 +103,7 @@
 			<img src="./hsr_data/lightcones/pastandfuture_crop.png" alt="Past and Future Lightcone Art" />
 			<div class="super">
 				<div class="super-bg">
-					<p>{currentLightcone.super}</p>
+					<p>{standardConverter.toRoman(currentLightcone.super)}</p>
 				</div>
 			</div>
 			<div class="lightcone-info">
